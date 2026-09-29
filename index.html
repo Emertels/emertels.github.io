@@ -40,20 +40,24 @@
         <a href="#redes" data-i18n="nav_community">Comunidade</a>
       </nav>
       <div class="nav-actions">
-        <!-- Language Selector -->
-        <div class="lang-selector-wrapper">
-          <select id="langSelect" class="lang-select" aria-label="Selecione o idioma">
-            <option value="pt">🇧🇷 PT-BR</option>
-            <option value="en">🇺🇸 EN</option>
-            <option value="es">🇪🇸 ES</option>
-            <option value="fr">🇫🇷 FR</option>
-            <option value="de">🇩🇪 DE</option>
-            <option value="it">🇮🇹 IT</option>
-            <option value="ja">🇯🇵 JA</option>
-            <option value="zh">🇨🇳 ZH</option>
-            <option value="ru">🇷🇺 RU</option>
-            <option value="ko">🇰🇷 KO</option>
-          </select>
+        <!-- Custom Language Dropdown -->
+        <div class="custom-dropdown" id="langDropdown">
+          <button class="dropdown-trigger" id="dropdownTrigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="trigger-content" id="triggerContent">🇧🇷 PT-BR</span>
+            <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <ul class="dropdown-menu" id="dropdownMenu" role="listbox">
+            <li class="dropdown-item selected" data-value="pt" role="option">🇧🇷 PT-BR</li>
+            <li class="dropdown-item" data-value="en" role="option">🇺🇸 EN</li>
+            <li class="dropdown-item" data-value="es" role="option">🇪🇸 ES</li>
+            <li class="dropdown-item" data-value="fr" role="option">🇫🇷 FR</li>
+            <li class="dropdown-item" data-value="de" role="option">🇩🇪 DE</li>
+            <li class="dropdown-item" data-value="it" role="option">🇮🇹 IT</li>
+            <li class="dropdown-item" data-value="ja" role="option">🇯🇵 JA</li>
+            <li class="dropdown-item" data-value="zh" role="option">🇨🇳 ZH</li>
+            <li class="dropdown-item" data-value="ru" role="option">🇷🇺 RU</li>
+            <li class="dropdown-item" data-value="ko" role="option">🇰🇷 KO</li>
+          </ul>
         </div>
 
         <a href="https://emertels.github.io/discord" class="btn btn-discord-nav" target="_blank" rel="noopener">

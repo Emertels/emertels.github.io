@@ -452,10 +452,31 @@ function setLanguage(lang) {
     }
   });
 
-  const select = document.getElementById('langSelect');
-  if (select && select.value !== lang) {
-    select.value = lang;
+  const langLabels = {
+    pt: "🇧🇷 PT-BR",
+    en: "🇺🇸 EN",
+    es: "🇪🇸 ES",
+    fr: "🇫🇷 FR",
+    de: "🇩🇪 DE",
+    it: "🇮🇹 IT",
+    ja: "🇯🇵 JA",
+    zh: "🇨🇳 ZH",
+    ru: "🇷🇺 RU",
+    ko: "🇰🇷 KO"
+  };
+
+  const triggerContent = document.getElementById('triggerContent');
+  if (triggerContent && langLabels[lang]) {
+    triggerContent.innerText = langLabels[lang];
   }
+
+  document.querySelectorAll('.dropdown-item').forEach(item => {
+    if (item.getAttribute('data-value') === lang) {
+      item.classList.add('selected');
+    } else {
+      item.classList.remove('selected');
+    }
+  });
 
   localStorage.setItem('preferred_lang', lang);
   document.documentElement.lang = lang;
@@ -474,10 +495,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const select = document.getElementById('langSelect');
-  if (select) {
-    select.addEventListener('change', (e) => {
-      setLanguage(e.target.value);
+  const dropdown = document.getElementById('langDropdown');
+  const trigger = document.getElementById('dropdownTrigger');
+  const menu = document.getElementById('dropdownMenu');
+
+  if (trigger && dropdown) {
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+      item.addEventListener('click', (e) => {
+        const val = item.getAttribute('data-value');
+        setLanguage(val);
+        dropdown.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 });

@@ -123,10 +123,14 @@ body {
   align-items: center;
   gap: 10px;
 }
-.lang-selector-wrapper {
+.custom-dropdown {
   position: relative;
+  user-select: none;
 }
-.lang-select {
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   background: rgba(255, 255, 255, 0.05);
   color: var(--text-main);
   border: 1px solid var(--border-color);
@@ -136,16 +140,69 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
-  outline: none;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
-.lang-select:hover, .lang-select:focus {
-  border-color: rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.08);
+.dropdown-trigger:hover, .custom-dropdown.open .dropdown-trigger {
+  border-color: rgba(0, 112, 243, 0.5);
+  background: rgba(0, 112, 243, 0.1);
+  box-shadow: 0 0 12px rgba(0, 112, 243, 0.2);
 }
-.lang-select option {
-  background-color: #161926;
-  color: #fff;
+.dropdown-chevron {
+  transition: transform 0.2s ease;
+  color: var(--text-muted);
+}
+.custom-dropdown.open .dropdown-chevron {
+  transform: rotate(180deg);
+}
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #141724;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
+  list-style: none;
+  padding: 6px;
+  min-width: 125px;
+  display: none;
+  z-index: 200;
+  backdrop-filter: blur(20px);
+}
+.custom-dropdown.open .dropdown-menu {
+  display: block;
+  animation: fadeInDown 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-item {
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #c4c8d4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+}
+.dropdown-item:hover {
+  background: rgba(0, 112, 243, 0.2);
+  color: #ffffff;
+}
+.dropdown-item.selected {
+  background: rgba(0, 112, 243, 0.35);
+  color: #ffffff;
+  font-weight: 700;
 }
 .btn-discord-nav {
   display: flex;
