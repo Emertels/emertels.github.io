@@ -115,6 +115,35 @@ body {
 .nav-links a:hover {
   color: var(--text-main);
 }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.lang-selector-wrapper {
+  position: relative;
+}
+.lang-select {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+}
+.lang-select:hover, .lang-select:focus {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+}
+.lang-select option {
+  background-color: #161926;
+  color: #fff;
+}
 .btn-discord-nav {
   display: flex;
   align-items: center;
