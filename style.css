@@ -78,7 +78,7 @@ body {
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,30 +86,33 @@ body {
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
   color: var(--text-main);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
 }
 .logo-mark {
-  font-family: 'JetBrains Mono', monospace;
   color: var(--accent-cyan);
-  background: rgba(0, 223, 216, 0.1);
-  padding: 4px 8px;
+  background: rgba(0, 223, 216, 0.08);
+  padding: 6px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(0, 223, 216, 0.25);
-  font-size: 0.9rem;
+  border: 1px solid rgba(0, 223, 216, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-links {
   display: flex;
-  gap: 32px;
+  gap: 28px;
 }
 .nav-links a {
   color: var(--text-muted);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
   transition: color 0.2s;
 }
 .nav-links a:hover {
@@ -118,19 +121,19 @@ body {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 .lang-selector-wrapper {
   position: relative;
 }
 .lang-select {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-main);
   border: 1px solid var(--border-color);
-  padding: 8px 12px;
-  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  border-radius: 6px;
   font-family: inherit;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   outline: none;
@@ -138,7 +141,7 @@ body {
 }
 .lang-select:hover, .lang-select:focus {
   border-color: rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
 }
 .lang-select option {
   background-color: #161926;
@@ -147,21 +150,21 @@ body {
 .btn-discord-nav {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(88, 101, 242, 0.15);
+  gap: 6px;
+  background: rgba(88, 101, 242, 0.12);
   color: #fff;
-  border: 1px solid rgba(88, 101, 242, 0.35);
-  padding: 8px 16px;
-  border-radius: var(--radius-sm);
+  border: 1px solid rgba(88, 101, 242, 0.3);
+  padding: 6px 12px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   transition: all 0.2s;
 }
 .btn-discord-nav:hover {
   background: var(--accent-discord);
   border-color: var(--accent-discord);
-  box-shadow: 0 0 20px rgba(88, 101, 242, 0.4);
+  box-shadow: 0 0 16px rgba(88, 101, 242, 0.35);
 }
 
 /* Hero Section */
