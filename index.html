@@ -20,8 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css?v=20260929v3">
-  <script src="app.js?v=20260929v3" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261005v1">
+  <script src="app.js?v=20261005v1" defer></script>
 </head>
 <body>
 
@@ -62,9 +62,8 @@
 
         <a href="https://emertels.github.io/discord" class="btn btn-discord-nav" target="_blank" rel="noopener">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-          <span>Discord</span>
-        </a>
-      </div>
+        <span>Discord</span>
+      </a>
     </div>
   </header>
 
@@ -93,8 +92,8 @@
         <!-- Quick Stats -->
         <div class="stats-bar">
           <div class="stat-card">
-            <span class="stat-num">Open</span>
-            <span class="stat-label" data-i18n="stat_projects">Inovação & Código Aberto</span>
+            <span class="stat-num">8+</span>
+            <span class="stat-label" data-i18n="stat_projects">Projetos & Suítes Oficiais</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-card">
@@ -118,10 +117,81 @@
           <p class="section-subtitle" data-i18n="sec_projects_sub">Conheça as principais ferramentas desenvolvidas e mantidas por Emerson Teles.</p>
         </div>
 
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Todos os Projetos</button>
+          <button class="filter-btn" data-filter="ai" data-i18n="filter_translations_ai">Traduções & IA</button>
+          <button class="filter-btn" data-filter="automation" data-i18n="filter_automation_sys">Automação & Sistema</button>
+          <button class="filter-btn" data-filter="gaming" data-i18n="filter_emulation_games">Emulação & Jogos</button>
+        </div>
+
         <div class="projects-grid">
           
-          <!-- Project 1: PSBBN Translator -->
-          <article class="project-card featured">
+          <!-- Project 1: Cursor-Traducao-PTBR -->
+          <article class="project-card featured" data-category="ai">
+            <div class="card-tag" data-i18n="tag_ai_ptbr">Destaque IA • PT-BR</div>
+            <div class="card-icon">🤖</div>
+            <h3 class="card-title">Cursor AI — Tradução PT-BR</h3>
+            <p class="card-desc" data-i18n="cursor_desc">
+              Pacote portátil de tradução e localização completa da IDE Cursor AI para Português do Brasil (PT-BR).
+            </p>
+            <div class="card-badges">
+              <span class="tech-pill primary">Cursor AI</span>
+              <span class="tech-pill highlight">v1.0.0</span>
+              <span class="tech-pill" data-i18n="pill_portability">Portátil</span>
+              <span class="tech-pill">Electron</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Emertels/Cursor-Traducao-PTBR" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
+                Ver no GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Antigravity-Traducao-PTBR -->
+          <article class="project-card featured" data-category="ai">
+            <div class="card-tag" data-i18n="tag_ai_ptbr">Destaque IA • PT-BR</div>
+            <div class="card-icon">⚡</div>
+            <h3 class="card-title">Antigravity — Tradução PT-BR</h3>
+            <p class="card-desc" data-i18n="antigravity_desc">
+              Pacote portátil de tradução e localização completa do Google Antigravity Desktop para Português do Brasil (PT-BR).
+            </p>
+            <div class="card-badges">
+              <span class="tech-pill purple">Antigravity</span>
+              <span class="tech-pill highlight">v1.1.0</span>
+              <span class="tech-pill" data-i18n="pill_portability">Portátil</span>
+              <span class="tech-pill">Electron</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Emertels/Antigravity-Traducao-PTBR" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
+                Ver no GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: ZCode-Traducao-PTBR -->
+          <article class="project-card featured" data-category="ai">
+            <div class="card-tag" data-i18n="tag_ai_ptbr">Destaque IA • PT-BR</div>
+            <div class="card-icon">💻</div>
+            <h3 class="card-title">ZCode — Tradução PT-BR</h3>
+            <p class="card-desc" data-i18n="zcode_desc">
+              Pacote portátil de tradução e localização completa do ZCode Desktop para Português do Brasil (PT-BR).
+            </p>
+            <div class="card-badges">
+              <span class="tech-pill primary">ZCode</span>
+              <span class="tech-pill highlight">v1.1.0</span>
+              <span class="tech-pill" data-i18n="pill_portability">Portátil</span>
+              <span class="tech-pill">Electron</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Emertels/ZCode-Traducao-PTBR" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
+                Ver no GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: PSBBN Translator -->
+          <article class="project-card featured" data-category="ai gaming">
             <div class="card-tag" data-i18n="tag_ps2">Destaque PS2</div>
             <div class="card-icon">🌐</div>
             <h3 class="card-title">PSBBN Translator</h3>
@@ -140,8 +210,29 @@
             </div>
           </article>
 
-          <!-- Project 2: AI-Chat-Vault -->
-          <article class="project-card featured">
+          <!-- Project 5: Suíte de Emuladores -->
+          <article class="project-card featured" data-category="gaming automation">
+            <div class="card-tag" data-i18n="tag_emulation">Destaque Emulação</div>
+            <div class="card-icon">🎮</div>
+            <h3 class="card-title">Suíte de Emuladores</h3>
+            <p class="card-desc" data-i18n="suite_desc">
+              Suíte inteligente em PowerShell para download e atualização autônoma de 56 emuladores e frontends. Suporte multilíngue nativo para 10 idiomas.
+            </p>
+            <div class="card-badges">
+              <span class="tech-pill">PowerShell</span>
+              <span class="tech-pill" data-i18n="pill_engines">56 Motores</span>
+              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
+              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Emertels/Suite-Emuladores" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
+                Ver no GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6: AI-Chat-Vault -->
+          <article class="project-card featured" data-category="ai automation">
             <div class="card-tag" data-i18n="tag_ai">Destaque IA</div>
             <div class="card-icon">🔒</div>
             <h3 class="card-title">AI-Chat-Vault</h3>
@@ -160,8 +251,8 @@
             </div>
           </article>
 
-          <!-- Project 3: Microsoft-Photos-Fix -->
-          <article class="project-card featured">
+          <!-- Project 7: Microsoft-Photos-Fix -->
+          <article class="project-card featured" data-category="automation">
             <div class="card-tag" data-i18n="tag_windows">Destaque Windows</div>
             <div class="card-icon">🖼️</div>
             <h3 class="card-title">Microsoft-Photos-Fix</h3>
@@ -175,6 +266,27 @@
             </div>
             <div class="card-actions">
               <a href="https://github.com/Emertels/Microsoft-Photos-Fix" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
+                Ver no GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 8: Roccat-Syn-Pro-Air-Fix -->
+          <article class="project-card featured" data-category="automation">
+            <div class="card-tag" data-i18n="tag_hardware">Hardware & Áudio</div>
+            <div class="card-icon">🎧</div>
+            <h3 class="card-title">Roccat-Syn-Pro-Air-Fix</h3>
+            <p class="card-desc" data-i18n="roccat_desc">
+              Suíte de estabilização de áudio, watchdog automático e blindagem contra perdas de sinal para o headset sem fio Roccat Syn Pro Air.
+            </p>
+            <div class="card-badges">
+              <span class="tech-pill">PowerShell</span>
+              <span class="tech-pill">Áudio</span>
+              <span class="tech-pill">Watchdog</span>
+              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/Emertels/Roccat-Syn-Pro-Air-Fix" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
                 Ver no GitHub
               </a>
             </div>
