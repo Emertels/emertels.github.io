@@ -20,8 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css?v=20261005v1">
-  <script src="app.js?v=20261005v1" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261019">
+  <script src="app.js?v=20261019" defer></script>
 </head>
 <body>
 
@@ -117,14 +117,6 @@
           <p class="section-subtitle" data-i18n="sec_projects_sub">Conheça as principais ferramentas desenvolvidas e mantidas por Emerson Teles.</p>
         </div>
 
-        <!-- Filter Bar -->
-        <div class="projects-filter-bar">
-          <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Todos os Projetos</button>
-          <button class="filter-btn" data-filter="ai" data-i18n="filter_translations_ai">Traduções & IA</button>
-          <button class="filter-btn" data-filter="automation" data-i18n="filter_automation_sys">Automação & Sistema</button>
-          <button class="filter-btn" data-filter="gaming" data-i18n="filter_emulation_games">Emulação & Jogos</button>
-        </div>
-
         <div class="projects-grid">
           
           <!-- Project 1: Cursor-Traducao-PTBR -->
@@ -137,7 +129,6 @@
             </p>
             <div class="card-badges">
               <span class="tech-pill primary">Cursor AI</span>
-              <span class="tech-pill highlight">v1.1.0</span>
               <span class="tech-pill" data-i18n="pill_portability">Portátil</span>
               <span class="tech-pill">Electron</span>
             </div>
@@ -158,7 +149,6 @@
             </p>
             <div class="card-badges">
               <span class="tech-pill purple">Antigravity</span>
-              <span class="tech-pill highlight">v1.2.0</span>
               <span class="tech-pill" data-i18n="pill_portability">Portátil</span>
               <span class="tech-pill">Electron</span>
             </div>
@@ -179,7 +169,6 @@
             </p>
             <div class="card-badges">
               <span class="tech-pill primary">ZCode</span>
-              <span class="tech-pill highlight">v1.1.0</span>
               <span class="tech-pill" data-i18n="pill_portability">Portátil</span>
               <span class="tech-pill">Electron</span>
             </div>
@@ -190,327 +179,14 @@
             </div>
           </article>
 
-          <!-- Project: CodexRouter-Traducao-PTBR -->
-          <article class="project-card featured" data-category="ai">
-            <div class="card-tag" data-i18n="tag_ai_ptbr">Destaque IA • PT-BR</div>
-            <div class="card-icon">🧭</div>
-            <h3 class="card-title">Codex Router — Tradução PT-BR</h3>
-            <p class="card-desc" data-i18n="codexrouter_desc">
-              Pacote portátil de tradução e localização completa do Codex Router Control Center para Português do Brasil (PT-BR).
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill primary">Codex Router</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_portability">Portátil</span>
-              <span class="tech-pill">Electron</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/CodexRouter-Traducao-PTBR" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
+        </div>
 
-          <!-- Project 4: PSBBN Translator -->
-          <article class="project-card featured" data-category="ai gaming">
-            <div class="card-tag" data-i18n="tag_ps2">Destaque PS2</div>
-            <div class="card-icon">🌐</div>
-            <h3 class="card-title">PSBBN Translator</h3>
-            <p class="card-desc" data-i18n="psbbn_desc">
-              Suíte completa de tradução para o sistema operacional PlayStation Broadband Navigator (PS2). Tradução oficial para PT-BR e automação para mais de 40 idiomas.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PS2</span>
-              <span class="tech-pill" data-i18n="pill_ps2_lang">40 Idiomas</span>
-              <span class="tech-pill">XML & Dialogs</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/PSBBN-Translator" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 5: Suíte de Emuladores -->
-          <article class="project-card featured" data-category="gaming automation">
-            <div class="card-tag" data-i18n="tag_emulation">Destaque Emulação</div>
-            <div class="card-icon">🎮</div>
-            <h3 class="card-title">Suíte de Emuladores</h3>
-            <p class="card-desc" data-i18n="suite_desc">
-              Suíte inteligente em PowerShell para download e atualização autônoma de 56 emuladores e frontends. Suporte multilíngue nativo para 10 idiomas.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill" data-i18n="pill_engines">56 Motores</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Suite-Emuladores" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 6: AI-Chat-Vault -->
-          <article class="project-card featured" data-category="ai automation">
-            <div class="card-tag" data-i18n="tag_ai">Destaque IA</div>
-            <div class="card-icon">🔒</div>
-            <h3 class="card-title">AI-Chat-Vault</h3>
-            <p class="card-desc" data-i18n="vault_desc">
-              Backup portátil e restauração cirúrgica de históricos de conversas de 20 IAs agênticas e ferramentas avançadas de desenvolvimento.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill">20 Agentes</span>
-              <span class="tech-pill" data-i18n="pill_portability">Portabilidade</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/AI-Chat-Vault" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 7: Microsoft-Photos-Fix -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag" data-i18n="tag_windows">Destaque Windows</div>
-            <div class="card-icon">🖼️</div>
-            <h3 class="card-title">Microsoft-Photos-Fix</h3>
-            <p class="card-desc" data-i18n="photos_desc">
-              Solução avançada em PowerShell e C# para restauração da rota de abertura rápida e definição de plano de fundo no app Fotos do Windows.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill">C# API</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Microsoft-Photos-Fix" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 8: Roccat-Syn-Pro-Air-Fix -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag" data-i18n="tag_hardware">Hardware & Áudio</div>
-            <div class="card-icon">🎧</div>
-            <h3 class="card-title">Roccat-Syn-Pro-Air-Fix</h3>
-            <p class="card-desc" data-i18n="roccat_desc">
-              Suíte de estabilização de áudio, watchdog automático e blindagem contra perdas de sinal para o headset sem fio Roccat Syn Pro Air.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill">Áudio</span>
-              <span class="tech-pill">Watchdog</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Roccat-Syn-Pro-Air-Fix" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 9: ClearDeath-App-Detector -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Manutenção & Diagnóstico</div>
-            <div class="card-icon">🛡️</div>
-            <h3 class="card-title">ClearDeath-App-Detector</h3>
-            <p class="card-desc">
-              Detecção autônoma de processos travados e aplicativos não responsivos no Windows, limpeza de cache órfão e auditoria de integridade.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">Diagnóstico</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/ClearDeath-App-Detector" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 10: Windows-Apps-Updater -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Atualização de Apps</div>
-            <div class="card-icon">🔄</div>
-            <h3 class="card-title">Windows-Apps-Updater</h3>
-            <p class="card-desc">
-              Gerenciamento e atualização automatizada de programas e softwares instalados no Windows via Winget com relatórios e logs detalhados.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">Winget</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Windows-Apps-Updater" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 11: Windows-Network-Reset-Tool -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Rede & Conectividade</div>
-            <div class="card-icon">🌐</div>
-            <h3 class="card-title">Windows-Network-Reset-Tool</h3>
-            <p class="card-desc">
-              Restauração cirúrgica e redefinição completa de pilha de rede TCP/IP, flush DNS, renovação DHCP, winsock e liberação de interfaces.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">TCP/IP</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Windows-Network-Reset-Tool" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 12: PC-Network-Diagnostics -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Diagnóstico de Rede</div>
-            <div class="card-icon">📡</div>
-            <h3 class="card-title">PC-Network-Diagnostics</h3>
-            <p class="card-desc">
-              Diagnóstico abrangente de conectividade, resolução de nomes DNS, latência, rotas e integridade dos adaptadores de rede.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">Latência</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/PC-Network-Diagnostics" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 13: SMB-Protocol-Manager -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Compartilhamento & SMB</div>
-            <div class="card-icon">📁</div>
-            <h3 class="card-title">SMB-Protocol-Manager</h3>
-            <p class="card-desc">
-              Auditoria, controle e gerenciamento simplificado dos protocolos SMBv1, SMBv2 e SMBv3 em redes locais para máxima segurança.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">SMBv1/v2/v3</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/SMB-Protocol-Manager" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 14: Windows-Cache-Cleaner -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Otimização de Disco</div>
-            <div class="card-icon">🧹</div>
-            <h3 class="card-title">Windows-Cache-Cleaner</h3>
-            <p class="card-desc">
-              Limpeza profunda e segura de arquivos temporários do sistema, caches de navegadores, logs obsoletos e lixeira no Windows.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">Otimização</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Windows-Cache-Cleaner" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 15: Windows-IP-Manager -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Configuração IP</div>
-            <div class="card-icon">🖧</div>
-            <h3 class="card-title">Windows-IP-Manager</h3>
-            <p class="card-desc">
-              Configuração rápida e intuitiva de endereçamento IPv4/IPv6, transição entre DHCP e IP fixo e troca rápida de servidores DNS públicos.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">IPv4 / IPv6</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Windows-IP-Manager" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 16: Windows-Performance-Test -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Benchmark & Hardware</div>
-            <div class="card-icon">⚡</div>
-            <h3 class="card-title">Windows-Performance-Test</h3>
-            <p class="card-desc">
-              Bateria de testes de benchmark e medição de desempenho do sistema para CPU, memória RAM, latência e velocidade de leitura de disco.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">Benchmark</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Windows-Performance-Test" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 17: Windows-Update-Manager -->
-          <article class="project-card featured" data-category="automation">
-            <div class="card-tag">Windows Update</div>
-            <div class="card-icon">⚙️</div>
-            <h3 class="card-title">Windows-Update-Manager</h3>
-            <p class="card-desc">
-              Auditoria, reparo do repositório de atualizações (SoftwareDistribution/Catroot2) e gerenciamento autônomo do serviço Windows Update.
-            </p>
-            <div class="card-badges">
-              <span class="tech-pill">PowerShell</span>
-              <span class="tech-pill highlight">v1.0.0</span>
-              <span class="tech-pill" data-i18n="pill_languages">10 Idiomas</span>
-              <span class="tech-pill">Manutenção</span>
-              <span class="tech-pill" data-i18n="pill_windows">Windows</span>
-            </div>
-            <div class="card-actions">
-              <a href="https://github.com/Emertels/Windows-Update-Manager" class="btn btn-card" target="_blank" rel="noopener" data-i18n="btn_view_github">
-                Ver no GitHub
-              </a>
-            </div>
-          </article>
-
+        <!-- Direct Link to All Repositories -->
+        <div class="projects-cta-container">
+          <a href="https://github.com/Emertels?tab=repositories" class="btn btn-primary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span data-i18n="btn_github">Acessar Repositórios no GitHub</span>
+          </a>
         </div>
       </div>
     </section>

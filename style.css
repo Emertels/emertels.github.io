@@ -570,3 +570,10 @@ body {
     display: none;
   }
 }
+
+.projects-cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
