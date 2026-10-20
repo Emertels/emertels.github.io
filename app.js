@@ -57,7 +57,8 @@ const translations = {
     banner_desc: "Acesse o catálogo completo no GitHub com todas as ferramentas de automação, emulação, scripts de áudio e fixes para Windows.",
     btn_github_all: "Ver Todos os Repositórios no GitHub",
     btn_featured_projects: "Ver Projetos Principais",
-    stat_featured: "Suítes em Destaque"
+    stat_featured: "Suítes em Destaque",
+    stat_localization: "Localização Técnica Oficial"
   },
   en: {
     badge: "Developer & Technical Translator",
@@ -117,7 +118,8 @@ const translations = {
     banner_desc: "Explore the complete open-source catalog on GitHub including system automation suites, emulator tools, and Windows fixes.",
     btn_github_all: "View All Repositories on GitHub",
     btn_featured_projects: "Explore Featured Projects",
-    stat_featured: "Featured Suites"
+    stat_featured: "Featured Suites",
+    stat_localization: "Official Technical Localization"
   },
   es: {
     badge: "Desarrollador y Traductor Técnico",
@@ -176,7 +178,8 @@ const translations = {
     banner_desc: "Explora el catálogo completo de código abierto en GitHub con herramientas de automatización, emulación y mejoras de Windows.",
     btn_github_all: "Ver Todos los Repositorios en GitHub",
     btn_featured_projects: "Ver Proyectos Destacados",
-    stat_featured: "Suites Destacadas"
+    stat_featured: "Suites Destacadas",
+    stat_localization: "Localización Técnica Oficial"
   },
   fr: {
     badge: "Développeur & Traducteur Technique",
@@ -235,7 +238,8 @@ const translations = {
     banner_desc: "Découvrez le catalogue open-source complet sur GitHub comprenant des scripts d'automatisation, des émulateurs et des correctifs Windows.",
     btn_github_all: "Voir Tous les Référentiels sur GitHub",
     btn_featured_projects: "Découvrir les Projets",
-    stat_featured: "Suites en Vedette"
+    stat_featured: "Suites en Vedette",
+    stat_localization: "Localisation Technique Officielle"
   },
   de: {
     badge: "Entwickler & Technischer Übersetzer",
@@ -294,7 +298,8 @@ const translations = {
     banner_desc: "Entdecken Sie den vollständigen Open-Source-Katalog auf GitHub mit Systemautomatisierung, Emulatoren und Windows-Fixes.",
     btn_github_all: "Alle Repositories auf GitHub anzeigen",
     btn_featured_projects: "Hauptprojekte anzeigen",
-    stat_featured: "Vorgestellte Suites"
+    stat_featured: "Vorgestellte Suites",
+    stat_localization: "Offizielle technische Lokalisierung"
   },
   it: {
     badge: "Sviluppatore e Traduttore Tecnico",
@@ -353,7 +358,8 @@ const translations = {
     banner_desc: "Esplora il catalogo completo open source su GitHub con suite di automazione, emulatori e correzioni per Windows.",
     btn_github_all: "Vedi Tutti i Repository su GitHub",
     btn_featured_projects: "Vedi i Progetti Principali",
-    stat_featured: "Suite in Evidenza"
+    stat_featured: "Suite in Evidenza",
+    stat_localization: "Localizzazione Tecnica Ufficiale"
   },
   ja: {
     badge: "開発者 & テクニカル翻訳者",
@@ -412,7 +418,8 @@ const translations = {
     banner_desc: "GitHubで自動化ツール、エミュレータ、Windows向け修正スクリプトを含むすべてのオープンソースカタログをご覧ください。",
     btn_github_all: "GitHubで全リポジトリを見る",
     btn_featured_projects: "主要プロジェクトを見る",
-    stat_featured: "注目のスイート"
+    stat_featured: "注目のスイート",
+    stat_localization: "公式技術ローカライズ"
   },
   zh: {
     badge: "开发者 & 技术本地化翻译者",
@@ -471,7 +478,8 @@ const translations = {
     banner_desc: "在 GitHub 上探索完整的开源项目库，包括自动化工具、模拟器管理器和 Windows 系统修复程序。",
     btn_github_all: "查看 GitHub 上的所有项目库",
     btn_featured_projects: "查看精选项目",
-    stat_featured: "精选套件"
+    stat_featured: "精选套件",
+    stat_localization: "官方技术本地化翻译"
   },
   ru: {
     badge: "Разработчик и Технический Переводчик",
@@ -530,7 +538,8 @@ const translations = {
     banner_desc: "Изучите полный каталог с открытым исходным кодом на GitHub, включая скрипты автоматизации, эмуляторы и исправления Windows.",
     btn_github_all: "Посмотреть все репозитории на GitHub",
     btn_featured_projects: "Посмотреть главные проекты",
-    stat_featured: "Главные пакеты"
+    stat_featured: "Главные пакеты",
+    stat_localization: "Официальная локализация"
   },
   ko: {
     badge: "개발자 & 기술 번역가",
@@ -589,7 +598,8 @@ const translations = {
     banner_desc: "시스템 자동화 도구, 에뮬레이터 제품군, Windows 수정 프로그램을 포함한 GitHub의 전체 오픈 소스 카탈로그를 확인하세요.",
     btn_github_all: "GitHub에서 모든 저장소 보기",
     btn_featured_projects: "주요 프로젝트 보기",
-    stat_featured: "주요 스위트"
+    stat_featured: "주요 스위트",
+    stat_localization: "공식 기술 로컬라이제이션"
   }
 };
 
