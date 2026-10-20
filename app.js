@@ -58,7 +58,8 @@ const translations = {
     btn_github_all: "Ver Todos os Repositórios no GitHub",
     btn_featured_projects: "Ver Projetos Principais",
     stat_featured: "Suítes em Destaque",
-    stat_localization: "Localização Técnica Oficial"
+    stat_localization: "Localização Técnica Oficial",
+    btn_about_me: "Sobre o Desenvolvedor"
   },
   en: {
     badge: "Developer & Technical Translator",
@@ -119,7 +120,8 @@ const translations = {
     btn_github_all: "View All Repositories on GitHub",
     btn_featured_projects: "Explore Featured Projects",
     stat_featured: "Featured Suites",
-    stat_localization: "Official Technical Localization"
+    stat_localization: "Official Technical Localization",
+    btn_about_me: "About the Developer"
   },
   es: {
     badge: "Desarrollador y Traductor Técnico",
@@ -179,7 +181,8 @@ const translations = {
     btn_github_all: "Ver Todos los Repositorios en GitHub",
     btn_featured_projects: "Ver Proyectos Destacados",
     stat_featured: "Suites Destacadas",
-    stat_localization: "Localización Técnica Oficial"
+    stat_localization: "Localización Técnica Oficial",
+    btn_about_me: "Sobre el Desarrollador"
   },
   fr: {
     badge: "Développeur & Traducteur Technique",
@@ -239,7 +242,8 @@ const translations = {
     btn_github_all: "Voir Tous les Référentiels sur GitHub",
     btn_featured_projects: "Découvrir les Projets",
     stat_featured: "Suites en Vedette",
-    stat_localization: "Localisation Technique Officielle"
+    stat_localization: "Localisation Technique Officielle",
+    btn_about_me: "À propos du Développeur"
   },
   de: {
     badge: "Entwickler & Technischer Übersetzer",
@@ -299,7 +303,8 @@ const translations = {
     btn_github_all: "Alle Repositories auf GitHub anzeigen",
     btn_featured_projects: "Hauptprojekte anzeigen",
     stat_featured: "Vorgestellte Suites",
-    stat_localization: "Offizielle technische Lokalisierung"
+    stat_localization: "Offizielle technische Lokalisierung",
+    btn_about_me: "Über den Entwickler"
   },
   it: {
     badge: "Sviluppatore e Traduttore Tecnico",
@@ -359,7 +364,8 @@ const translations = {
     btn_github_all: "Vedi Tutti i Repository su GitHub",
     btn_featured_projects: "Vedi i Progetti Principali",
     stat_featured: "Suite in Evidenza",
-    stat_localization: "Localizzazione Tecnica Ufficiale"
+    stat_localization: "Localizzazione Tecnica Ufficiale",
+    btn_about_me: "Informazioni sullo Sviluppatore"
   },
   ja: {
     badge: "開発者 & テクニカル翻訳者",
@@ -419,7 +425,8 @@ const translations = {
     btn_github_all: "GitHubで全リポジトリを見る",
     btn_featured_projects: "主要プロジェクトを見る",
     stat_featured: "注目のスイート",
-    stat_localization: "公式技術ローカライズ"
+    stat_localization: "公式技術ローカライズ",
+    btn_about_me: "開発者について"
   },
   zh: {
     badge: "开发者 & 技术本地化翻译者",
@@ -479,7 +486,8 @@ const translations = {
     btn_github_all: "查看 GitHub 上的所有项目库",
     btn_featured_projects: "查看精选项目",
     stat_featured: "精选套件",
-    stat_localization: "官方技术本地化翻译"
+    stat_localization: "官方技术本地化翻译",
+    btn_about_me: "关于开发者"
   },
   ru: {
     badge: "Разработчик и Технический Переводчик",
@@ -539,7 +547,8 @@ const translations = {
     btn_github_all: "Посмотреть все репозитории на GitHub",
     btn_featured_projects: "Посмотреть главные проекты",
     stat_featured: "Главные пакеты",
-    stat_localization: "Официальная локализация"
+    stat_localization: "Официальная локализация",
+    btn_about_me: "Об Авторе"
   },
   ko: {
     badge: "개발자 & 기술 번역가",
@@ -599,7 +608,8 @@ const translations = {
     btn_github_all: "GitHub에서 모든 저장소 보기",
     btn_featured_projects: "주요 프로젝트 보기",
     stat_featured: "주요 스위트",
-    stat_localization: "공식 기술 로컬라이제이션"
+    stat_localization: "공식 기술 로컬라이제이션",
+    btn_about_me: "개발자 소개"
   }
 };
 
